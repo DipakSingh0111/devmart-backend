@@ -20,6 +20,9 @@ app.use(
 
 // routes
 app.use("/api/auth", authRouter);
+app.get("/", (req, res) => {
+  res.send("Welcome to Dev Clothes API");
+});
 
 const PORT = process.env.PORT || 4000;
 
