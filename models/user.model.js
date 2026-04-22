@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema(
 
     password: {
       type: String,
-      required: true, // ✅ important
+      required: true,
     },
 
     mobile: {
@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema(
     role: {
       type: String,
       enum: ["user", "admin"],
-      default: "user", // ✅ ye important fix
+      default: "user",
     },
 
     resetOtp: String,
